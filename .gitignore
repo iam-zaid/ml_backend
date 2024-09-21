@@ -6,3 +6,6 @@ collection_result.csv
 collection_to_tag.csv
 collection.csv
 user_to_org.csv
+
+#--#
+__pycache__
