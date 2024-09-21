@@ -1,0 +1,8 @@
+.env
+
+#ignoring the csv files loaded for initial build
+activity_to_collection.csv
+collection_result.csv
+collection_to_tag.csv
+collection.csv
+user_to_org.csv
