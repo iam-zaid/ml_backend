@@ -2,9 +2,14 @@ import streamlit as st
 from preprocess import load_and_preprocess_data
 from rec_model import recommend_collections
 import pandas as pd
+from PIL import Image
 
 def main():
-    st.title("Wellnify Recommendation System")
+
+    logo = Image.open("resources/wellnify_logo.png")  
+    st.image(logo, width=200) 
+
+    st.title("Recommendation System")
     
     # Sidebar for input
     st.sidebar.title("User Input")
@@ -16,8 +21,8 @@ def main():
     # Get recommendations
     if st.sidebar.button("Get Recommendations"):
         recommendations = recommend_collections(user_id, collection_result_df, user_to_org_df, collection_df, cosine_sim_matrix)
+        recommendations = recommendations.rename(columns={'id':'ID','name':'Collection Name','description':'Description'})
         st.write("Recommended Collections:")
-        recommendations = recommendations.reset_index(drop=True)
         st.write(recommendations)
         # for idx, row in recommendations.iterrows():
         #         st.write(f"**ID:** {row['id']}")
