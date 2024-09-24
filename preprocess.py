@@ -4,13 +4,7 @@ from scipy.sparse import hstack, csr_matrix
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-def load_and_preprocess_data():
-    # Load CSV data
-    collection_df = pd.read_csv('collection.csv')
-    collection_to_tag_df = pd.read_csv('collection_to_tag.csv')
-    activity_to_collection_df = pd.read_csv('activity_to_collection.csv')
-    collection_result_df = pd.read_csv('collection_result.csv')
-    user_to_org_df = pd.read_csv('user_to_org.csv')
+def load_and_preprocess_data(collection_df,collection_to_tag_df,activity_to_collection_df,collection_result_df,user_to_org_df):
     
     # Preprocess Tags, Collection Type, and Activities
     tag_df = collection_to_tag_df.merge(collection_df[['id']], left_on='collectionId', right_on='id', how='inner')

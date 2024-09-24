@@ -1,13 +1,38 @@
 from flask import Flask, request, jsonify
 from preprocess import load_and_preprocess_data
 from rec_model import recommend_collections
+import sqlalchemy
+from dotenv import load_dotenv
+from config import Config
+
+
+load_dotenv()
+
+
+#SQL Connection
+def load_data():
+    table_names=['collection','collection_result','collection_to_tag','activity_to_collection','user_to_org']
+    engine = sqlalchemy.create_engine(Config.SQLALCHEMY_DATABASE_URI)
+    tables = {}
+    for table_name in table_names:
+        tables[table_name] = pd.read_sql_table(table_name, engine)
+
+    collection_df=tables['collection']
+    collection_result_df=tables['collection_result']
+    collection_to_tag_df=tables['collection_to_tag']
+    activity_to_collection_df=tables['activity_to_collection']
+    user_to_org_df=tables['user_to_org']
+    return collection_df, collection_result_df, collection_to_tag_df, activity_to_collection_df, user_to_org_df
 
 app = Flask(__name__)
 
 class RecommendationAPI:
     def __init__(self):
         # Load and preprocess data once
-        self.collection_df, self.collection_result_df, self.user_to_org_df, self.cosine_sim_matrix = load_and_preprocess_data()
+        # Load data
+        collection_df, collection_result_df, collection_to_tag_df, activity_to_collection_df, user_to_org_df = load_data()
+        self.collection_df, self.collection_result_df, self.user_to_org_df, self.cosine_sim_matrix = load_and_preprocess_data(collection_df,collection_to_tag_df,activity_to_collection_df,collection_result_df,user_to_org_df)
+
 
     def get_recommendations(self, user_id):
         # Generate recommendations using the same logic as Streamlit app
