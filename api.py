@@ -17,6 +17,13 @@ class RecommendationAPI:
 # Initialize the API class
 recommendation_api = RecommendationAPI()
 
+#Home page for default route
+@app.route('/')
+def home():
+    app.logger.info("Home page accessed")
+    return "Welcome to Wellnify API app for recommendation system "
+
+
 # Define the GET API endpoint
 @app.route('/recommendations/<int:id>', methods=['GET'])
 def get_recommendations(id):    

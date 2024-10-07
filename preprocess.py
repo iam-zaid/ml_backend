@@ -3,14 +3,16 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.sparse import hstack, csr_matrix
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+from services import TableLoaderService
 
 def load_and_preprocess_data():
-    # Load CSV data
-    collection_df = pd.read_csv('data_csv/collection.csv')
-    collection_to_tag_df = pd.read_csv('data_csv/collection_to_tag.csv')
-    activity_to_collection_df = pd.read_csv('data_csv/activity_to_collection.csv')
-    collection_result_df = pd.read_csv('data_csv/collection_result.csv')
-    user_to_org_df = pd.read_csv('data_csv/user_to_org.csv')
+    # # Load CSV data
+    # collection_df = pd.read_csv('data_csv/collection.csv')
+    # collection_to_tag_df = pd.read_csv('data_csv/collection_to_tag.csv')
+    # activity_to_collection_df = pd.read_csv('data_csv/activity_to_collection.csv')
+    # collection_result_df = pd.read_csv('data_csv/collection_result.csv')
+    # user_to_org_df = pd.read_csv('data_csv/user_to_org.csv')
+    collection_df, collection_result_df, collection_to_tag_df, activity_to_collection_df, user_to_org_df = TableLoaderService.load_data()
     
     # Preprocess Tags, Collection Type, and Activities
     tag_df = collection_to_tag_df.merge(collection_df[['id']], left_on='collectionId', right_on='id', how='inner')
