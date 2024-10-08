@@ -1,6 +1,6 @@
+from services import TableLoaderService
 import streamlit as st
-from preprocess import load_and_preprocess_data
-from rec_model import recommend_collections
+from recommendation import preprocess_data, recommend_collections
 import pandas as pd
 from PIL import Image
 
@@ -15,15 +15,33 @@ def main():
     st.sidebar.title("User Input")
     user_id = st.sidebar.number_input("Enter User ID", min_value=1, value=1, step=1)
     
-    # Load and preprocess data
-    collection_df, collection_result_df, user_to_org_df, cosine_sim_matrix = load_and_preprocess_data()
+    collection_df, collection_result_df, collection_to_tag_df, activity_to_collection_df, user_to_org_df,tag_df = TableLoaderService.load_data()
+
+    # Preprocess the data
+    collection_df, cosine_sim_type_df, cosine_sim_tag_df, cosine_sim_activities_df, cosine_sim_description_df, merged_df = preprocess_data(collection_df, collection_result_df, activity_to_collection_df,collection_to_tag_df,tag_df)
+
+
+    # Example: Get recommendations for user_id 564
+    
     
     # Get recommendations
     if st.sidebar.button("Get Recommendations"):
-        recommendations = recommend_collections(user_id, collection_result_df, user_to_org_df, collection_df, cosine_sim_matrix)
-        #recommendations = recommendations.rename(columns={'id':'ID','name':'Collection Name','description':'Description'})
+        recommended_collections = recommend_collections(
+        user_id,
+        collection_df,  # Preprocessed collection DataFrame
+        cosine_sim_type_df,  # Cosine similarity for type
+        cosine_sim_tag_df,  # Cosine similarity for tags
+        cosine_sim_activities_df,  # Cosine similarity for activities
+        cosine_sim_description_df,  # Cosine similarity for description
+        merged_df,  # Merged interaction DataFrame
+        user_to_org_df,  # User-to-organization DataFrame
+        None  # Weights (if None, defaults will be used)
+          # Number of top recommendations
+        )
         st.write("Recommended Collections:")
-        st.write(recommendations)
+        st.write(recommended_collections)
+
+        print(recommended_collections)
 
 
 if __name__ == "__main__":
