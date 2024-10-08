@@ -21,14 +21,9 @@ def main():
     # Get recommendations
     if st.sidebar.button("Get Recommendations"):
         recommendations = recommend_collections(user_id, collection_result_df, user_to_org_df, collection_df, cosine_sim_matrix)
-        recommendations = recommendations.rename(columns={'id':'ID','name':'Collection Name','description':'Description'})
+        #recommendations = recommendations.rename(columns={'id':'ID','name':'Collection Name','description':'Description'})
         st.write("Recommended Collections:")
         st.write(recommendations)
-        # for idx, row in recommendations.iterrows():
-        #         st.write(f"**ID:** {row['id']}")
-        #         st.write(f"**Name:** {row['name']}")
-        #         st.write(f"**Description:** {row['description']}")
-        #         st.write("---")  # Separator line for readability
 
 
 if __name__ == "__main__":
