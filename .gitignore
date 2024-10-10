@@ -10,4 +10,5 @@ user_to_org.csv
 *.logs
 
 #--#
+__pycache__
 debug_logs

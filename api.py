@@ -2,7 +2,7 @@
 #Class: api.py
 #Description: This class contains Code for handling API to be consumed for getting recommendations from the system. 
 Note: For makign sure the code works the first time, I have added a safety check in a way that before getting recommendations the first time, 
-        we have to run the load_and_preproces_data API to make sure we have the preprocessed Required for
+        we have to run the load_and_preproces_data API to make sure we have the preprocessed Required for getting recommmendations. 
 """
 from flask import Flask, request, jsonify
 from recommendation import recommend_collections, preprocess_data
@@ -10,29 +10,12 @@ from services import TableLoaderService
 import logging
 from logging.handlers import TimedRotatingFileHandler
 import os
+from logger_config import LoggerConfig
 
 app = Flask(__name__)
 
-"""Debug log setup code starts"""
-# Set up the debug_logs folder if it doesn't exist
-if not os.path.exists('debug_logs'):
-    os.makedirs('debug_logs')
-
-# Configure logging
-log_handler = logging.handlers.TimedRotatingFileHandler(
-    filename='debug_logs/rec_system.log',
-    when='midnight',
-    interval=1, # Rotate every 1 day
-    backupCount=30  # Keep logs for the last 7 days
-)
-log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-
-# Set up the logger
-logger = logging.getLogger('RecommendationAPI')
-logger.setLevel(logging.DEBUG)
-logger.addHandler(log_handler)
-
-"""Debug log setup code ends"""
+# Initialize logger
+logger = LoggerConfig.initialize_logger()
 
 
 class RecommendationAPI:
@@ -100,6 +83,9 @@ class RecommendationAPI:
 # Initialize the API class
 recommendation_api = RecommendationAPI()
 
+#Pre-processing data when the app is running first time
+recommendation_api.load_and_preprocess_data()
+
 # Home page route
 @app.route('/')
 def home():
@@ -135,9 +121,14 @@ def get_recommendations(id):
         logger.warning(f"Error in recommendation generation: {recommendations}")
         return jsonify({"message": recommendations}), 400
     
-    # Convert recommendations DataFrame to a dictionary
-    result = recommendations.to_dict(orient='records')
+    # Check if the DataFrame is empty
+    if recommendations.empty:
+        logging.warning(f"Recommendations DataFrame is empty for user ID: {id}")
+        return jsonify({"error": "No recommendations available for the given user"}), 404
     
+    # Convert recommendations DataFrame to a dictionary, but only select required columns
+    result = recommendations[['collectionId', 'collectionType', 'description', 'name', 'organizationId']].to_dict(orient='records')
+    print("Checking result:",result)
     # Return the recommendations as a JSON response
     logger.info(f"Recommendations successfully returned for user_id: {id}")
     return jsonify(result)

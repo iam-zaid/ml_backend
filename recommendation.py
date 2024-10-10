@@ -7,22 +7,20 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MultiLabelBinarizer
-import logging
+from logger_config import LoggerConfig
 
-# Configure logging
-logging.basicConfig(filename='recommendation_system.log', 
-                    level=logging.DEBUG, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# Initialize logger
+logger = LoggerConfig.initialize_logger()
 
 # Ensure the tag_category is split into tag_list
 def split_tags(collection_df):
-    logging.info("Splitting 'tag_category' into tag_list.")
+    logger.info("Splitting 'tag_category' into tag_list.")
     collection_df['tag_list'] = collection_df['tag_category'].apply(lambda x: x.split(',') if isinstance(x, str) else [])
     return collection_df
 
 # Parse tag components (split into tag type and specific value)
 def split_tag_components(collection_df):
-    logging.info("Parsing tag components.")
+    logger.info("Parsing tag components.")
     def parse_tag(tag):
         components = tag.split('-')
         if len(components) == 2:
@@ -40,7 +38,7 @@ def split_tag_components(collection_df):
 
 # Binarize tag types and specific values
 def binarize_tags(collection_df):
-    logging.info("Binarizing tag types and specific values.")
+    logger.info("Binarizing tag types and specific values.")
     mlb_tag_types = MultiLabelBinarizer()
     mlb_specific_values = MultiLabelBinarizer()
 
@@ -51,7 +49,7 @@ def binarize_tags(collection_df):
 
 # Prepare activity features
 def prepare_activity_features(activity_to_collection_df, collection_df):
-    logging.info("Preparing activity features.")
+    logger.info("Preparing activity features.")
     activity_df = activity_to_collection_df[['collectionId', 'activityId']].dropna()
     activity_ohe = pd.get_dummies(activity_df['activityId'], prefix='activity')
     activity_ohe = activity_df[['collectionId']].join(activity_ohe).groupby('collectionId').sum().reset_index()
@@ -64,7 +62,7 @@ def prepare_activity_features(activity_to_collection_df, collection_df):
 # Preprocess the data
 def preprocess_data(collection_df, collection_result_df, activity_to_collection_df,collection_to_tag_df, tag_df):
 
-    logging.info("Starting data preprocessing.")
+    logger.info("Starting data preprocessing.")
     
     collection_df = collection_df[collection_df['deletedAt'].isna()]
 
@@ -72,7 +70,7 @@ def preprocess_data(collection_df, collection_result_df, activity_to_collection_
     merged_df1 = pd.merge(collection_to_tag_df, collection_df, left_on='collectionId', right_on='id', how='inner')
     final_merged_df = pd.merge(merged_df1, tag_df, left_on='tagId', right_on='id', how='inner')
 
-    logging.info(f"Final merged DataFrame shape: {final_merged_df.shape}")
+    logger.info(f"Final merged DataFrame shape: {final_merged_df.shape}")
 
     # Dropping unnecessary columns (duplicate timestamps, ids, and nulls)
     columns_to_drop = [
@@ -101,7 +99,7 @@ def preprocess_data(collection_df, collection_result_df, activity_to_collection_
 
     collection_df=grouped_collection_df
 
-    logging.info(f"Processed collection DataFrame shape: {collection_df.shape}")
+    logger.info(f"Processed collection DataFrame shape: {collection_df.shape}")
     
     # Split tags and components
     collection_df = split_tags(collection_df)
@@ -117,7 +115,7 @@ def preprocess_data(collection_df, collection_result_df, activity_to_collection_
     collection_df = prepare_activity_features(activity_to_collection_df, collection_df)
 
     # Compute cosine similarities
-    logging.info("Calculating cosine similarities.")
+    logger.info("Calculating cosine similarities.")
     cosine_sim_type = cosine_similarity(tag_types_binarized, tag_types_binarized)
     cosine_sim_tag = cosine_similarity(specific_values_binarized, specific_values_binarized)
     cosine_sim_activities = cosine_similarity(collection_df.filter(like='activity_').fillna(0))
@@ -128,7 +126,7 @@ def preprocess_data(collection_df, collection_result_df, activity_to_collection_
     cosine_sim_activities_df = pd.DataFrame(cosine_sim_activities, index=collection_df['name'], columns=collection_df['name'])
 
     # Compute TF-IDF for textual description
-    logging.info("Computing TF-IDF for description.")
+    logger.info("Computing TF-IDF for description.")
     tfidf_vectorizer_description = TfidfVectorizer(stop_words='english')
     tfidf_matrix_description = tfidf_vectorizer_description.fit_transform(collection_df['description'])
     cosine_sim_description = cosine_similarity(tfidf_matrix_description, tfidf_matrix_description)
@@ -141,13 +139,13 @@ def preprocess_data(collection_df, collection_result_df, activity_to_collection_
 
 # Recommendation function with balanced tag weights
 def recommend_collections(user_id, collection_df, cosine_sim_type_df, cosine_sim_tag_df, cosine_sim_activities_df, cosine_sim_description_df, merged_df, user_to_org_df, weights=None, top_n=5):
-    logging.info(f"Generating recommendations for user {user_id}.")
+    logger.info(f"Generating recommendations for user {user_id}.")
     if weights is None:
         weights = {'description': 0.2, 'type': 0.4, 'tag': 0.2, 'activities': 0.2}
     
     # Get the organizations the user is part of
     user_orgs = user_to_org_df[user_to_org_df['userId'] == user_id]['orgId'].unique()
-    logging.debug(f"User {user_id} is part of organizations: {user_orgs}.")
+    logger.debug(f"User {user_id} is part of organizations: {user_orgs}.")
     
     # Filter collections that belong to these organizations
     filtered_collections = collection_df[collection_df['organizationId'].isin(user_orgs)]
@@ -156,7 +154,7 @@ def recommend_collections(user_id, collection_df, cosine_sim_type_df, cosine_sim
     user_collections = merged_df[(merged_df['userId'] == user_id) & (merged_df['collectionId'].isin(filtered_collections['collectionId']))]['name'].unique()
     
     if len(user_collections) == 0:
-        logging.info(f"No user interactions found for user {user_id}. Returning empty Data")
+        logger.info(f"No user interactions found for user {user_id}. Returning empty Data")
         return pd.DataFrame()
     
     # Filter the cosine similarity matrices to only include these collections
