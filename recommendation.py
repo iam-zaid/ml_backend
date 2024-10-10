@@ -1,3 +1,8 @@
+"""
+#Class: recommendation.py
+#Description: This class contains Code for preprocessing data and generating recommendations. 
+Owner: Wellnify
+"""
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity

@@ -1,5 +1,6 @@
 """Class name: services.py
-Description:Service class to load multiple tables from MySQL database using SQLAlchemy."""
+Description:Service class to load multiple tables from MySQL database using SQLAlchemy."
+Owner: Wellnify"""
 
 import pandas as pd
 import sqlalchemy

@@ -1,3 +1,9 @@
+"""
+#Class: app.py
+#Description: This class contains Code for the streamlit app that can be used to demo the functionality for the recommendation system
+Note: this was created for demo and checking the functionality from backend if there is any error or irregularity
+Owner: Wellnify
+"""
 from services import TableLoaderService
 import streamlit as st
 from recommendation import preprocess_data, recommend_collections
