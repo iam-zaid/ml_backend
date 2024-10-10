@@ -32,6 +32,7 @@ def main():
     
     # Get recommendations
     if st.sidebar.button("Get Recommendations"):
+      try:
         recommended_collections = recommend_collections(
         user_id,
         collection_df,  # Preprocessed collection DataFrame
@@ -44,10 +45,15 @@ def main():
         None  # Weights (if None, defaults will be used)
           # Number of top recommendations
         )
-        st.write("Recommended Collections:")
-        st.write(recommended_collections)
-
-        print(recommended_collections)
+        if recommended_collections.empty:
+            st.write("Not enough Activities to recommend collections for this User")
+        else:
+            result = recommended_collections[['collectionId', 'collectionType', 'name', 'organizationId','description']]
+            st.write("Recommended Collections:")
+            st.write(result)
+      except Exception as e:
+        # Catch and display any exceptions
+        st.error(f"An error occurred while generating recommendations: {e}")
 
 
 if __name__ == "__main__":
