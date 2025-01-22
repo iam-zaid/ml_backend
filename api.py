@@ -11,6 +11,9 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 import os
 from logger_config import LoggerConfig
+from models import Recommendation
+from datetime import datetime
+
 
 app = Flask(__name__)
 
@@ -86,6 +89,9 @@ recommendation_api = RecommendationAPI()
 #Pre-processing data when the app is running first time
 recommendation_api.load_and_preprocess_data()
 
+#Making table for user-recommendations
+TableLoaderService.initialize_user_recommendations_table()
+
 # Home page route
 @app.route('/')
 def home():
@@ -126,9 +132,21 @@ def get_recommendations(id):
         logging.warning(f"Recommendations DataFrame is empty for user ID: {id}")
         return jsonify({"error": "No recommendations available for the given user"}), 404
     
+
+     # Add 'userId' column to the DataFrame
+    recommendations['userId'] = id
+    recommendations['createdAt'] = datetime.now()  # Add createdAt timestamp
+
+    # Select only the required columns
+    recommendations_to_save = recommendations[['userId', 'collectionId', 'collectionType', 'description', 'name', 'organizationId', 'createdAt']]
+
+    # Save the DataFrame to the table
+    TableLoaderService.save_recommendations_to_table(recommendations_to_save, "user_recommendations")
+
     # Convert recommendations DataFrame to a dictionary, but only select required columns
     result = recommendations[['collectionId', 'collectionType', 'description', 'name', 'organizationId']].to_dict(orient='records')
-    print("Checking result:",result)
+    # print("Checking result:",result)
+
     # Return the recommendations as a JSON response
     logger.info(f"Recommendations successfully returned for user_id: {id}")
     return jsonify(result)

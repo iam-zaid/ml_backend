@@ -1,0 +1,81 @@
+2025-01-20 14:55:11,869 - INFO - RecommendationAPI initialized
+2025-01-20 14:55:11,869 - INFO - Started loading and preprocessing data
+2025-01-20 14:55:12,273 - INFO - Starting data preprocessing.
+2025-01-20 14:55:12,278 - INFO - Final merged DataFrame shape: (6926, 26)
+2025-01-20 14:55:12,295 - INFO - Processed collection DataFrame shape: (2997, 6)
+2025-01-20 14:55:12,295 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-20 14:55:12,295 - INFO - Parsing tag components.
+2025-01-20 14:55:12,298 - INFO - Binarizing tag types and specific values.
+2025-01-20 14:55:12,300 - INFO - Preparing activity features.
+2025-01-20 14:55:12,457 - INFO - Calculating cosine similarities.
+2025-01-20 14:55:12,515 - INFO - Computing TF-IDF for description.
+2025-01-20 14:55:12,569 - INFO - Data successfully loaded and preprocessed
+2025-01-20 14:55:12,591 - INFO - user_recommendations table already exists.
+2025-01-20 14:55:12,592 - INFO - Starting the Flask app
+2025-01-20 14:55:13,127 - INFO - RecommendationAPI initialized
+2025-01-20 14:55:13,127 - INFO - RecommendationAPI initialized
+2025-01-20 14:55:13,127 - INFO - RecommendationAPI initialized
+2025-01-20 14:55:13,127 - INFO - Started loading and preprocessing data
+2025-01-20 14:55:13,127 - INFO - Started loading and preprocessing data
+2025-01-20 14:55:13,127 - INFO - Started loading and preprocessing data
+2025-01-20 14:55:13,464 - INFO - Starting data preprocessing.
+2025-01-20 14:55:13,464 - INFO - Starting data preprocessing.
+2025-01-20 14:55:13,464 - INFO - Starting data preprocessing.
+2025-01-20 14:55:13,467 - INFO - Final merged DataFrame shape: (6926, 26)
+2025-01-20 14:55:13,467 - INFO - Final merged DataFrame shape: (6926, 26)
+2025-01-20 14:55:13,467 - INFO - Final merged DataFrame shape: (6926, 26)
+2025-01-20 14:55:13,483 - INFO - Processed collection DataFrame shape: (2997, 6)
+2025-01-20 14:55:13,483 - INFO - Processed collection DataFrame shape: (2997, 6)
+2025-01-20 14:55:13,483 - INFO - Processed collection DataFrame shape: (2997, 6)
+2025-01-20 14:55:13,483 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-20 14:55:13,483 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-20 14:55:13,483 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-20 14:55:13,484 - INFO - Parsing tag components.
+2025-01-20 14:55:13,484 - INFO - Parsing tag components.
+2025-01-20 14:55:13,484 - INFO - Parsing tag components.
+2025-01-20 14:55:13,486 - INFO - Binarizing tag types and specific values.
+2025-01-20 14:55:13,486 - INFO - Binarizing tag types and specific values.
+2025-01-20 14:55:13,486 - INFO - Binarizing tag types and specific values.
+2025-01-20 14:55:13,488 - INFO - Preparing activity features.
+2025-01-20 14:55:13,488 - INFO - Preparing activity features.
+2025-01-20 14:55:13,488 - INFO - Preparing activity features.
+2025-01-20 14:55:13,619 - INFO - Calculating cosine similarities.
+2025-01-20 14:55:13,619 - INFO - Calculating cosine similarities.
+2025-01-20 14:55:13,619 - INFO - Calculating cosine similarities.
+2025-01-20 14:55:13,676 - INFO - Computing TF-IDF for description.
+2025-01-20 14:55:13,676 - INFO - Computing TF-IDF for description.
+2025-01-20 14:55:13,676 - INFO - Computing TF-IDF for description.
+2025-01-20 14:55:13,729 - INFO - Data successfully loaded and preprocessed
+2025-01-20 14:55:13,729 - INFO - Data successfully loaded and preprocessed
+2025-01-20 14:55:13,729 - INFO - Data successfully loaded and preprocessed
+2025-01-20 14:55:13,741 - INFO - user_recommendations table already exists.
+2025-01-20 14:55:13,741 - INFO - user_recommendations table already exists.
+2025-01-20 14:55:13,741 - INFO - user_recommendations table already exists.
+2025-01-20 14:55:13,742 - INFO - Starting the Flask app
+2025-01-20 14:55:13,742 - INFO - Starting the Flask app
+2025-01-20 14:55:13,742 - INFO - Starting the Flask app
+2025-01-20 14:55:15,466 - INFO - Home page accessed
+2025-01-20 14:55:15,466 - INFO - Home page accessed
+2025-01-20 14:55:15,466 - INFO - Home page accessed
+2025-01-20 14:55:18,794 - INFO - Fetching recommendations for user_id: 1606
+2025-01-20 14:55:18,794 - INFO - Fetching recommendations for user_id: 1606
+2025-01-20 14:55:18,794 - INFO - Fetching recommendations for user_id: 1606
+2025-01-20 14:55:18,794 - INFO - Generating recommendations for user 1606.
+2025-01-20 14:55:18,794 - INFO - Generating recommendations for user 1606.
+2025-01-20 14:55:18,794 - INFO - Generating recommendations for user 1606.
+2025-01-20 14:55:18,795 - DEBUG - User 1606 is part of organizations: [  1 352].
+2025-01-20 14:55:18,795 - DEBUG - User 1606 is part of organizations: [  1 352].
+2025-01-20 14:55:18,795 - DEBUG - User 1606 is part of organizations: [  1 352].
+2025-01-20 14:55:18,847 - INFO - Recommendations successfully generated for user_id: 1606
+2025-01-20 14:55:18,847 - INFO - Recommendations successfully generated for user_id: 1606
+2025-01-20 14:55:18,847 - INFO - Recommendations successfully generated for user_id: 1606
+2025-01-20 14:55:18,865 - INFO - Dropped 5 duplicate recommendations.
+2025-01-20 14:55:18,865 - INFO - Dropped 5 duplicate recommendations.
+2025-01-20 14:55:18,865 - INFO - Dropped 5 duplicate recommendations.
+2025-01-20 14:55:18,874 - INFO - Successfully saved recommendations to table 'user_recommendations'
+2025-01-20 14:55:18,874 - INFO - Successfully saved recommendations to table 'user_recommendations'
+2025-01-20 14:55:18,874 - INFO - Successfully saved recommendations to table 'user_recommendations'
+2025-01-20 14:55:18,876 - INFO - Recommendations successfully returned for user_id: 1606
+2025-01-20 14:55:18,876 - INFO - Recommendations successfully returned for user_id: 1606
+2025-01-20 14:55:18,876 - INFO - Recommendations successfully returned for user_id: 1606
+2025-01-21 16:12:21,110 - INFO - user_recommendations table already exists.

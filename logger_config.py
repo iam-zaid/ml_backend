@@ -6,7 +6,7 @@ import os
 
 class LoggerConfig:
     @staticmethod
-    def initialize_logger(logger_name='WellnifyLogger', log_dir='debug_logs', log_file='recommendation_system.log'):
+    def initialize_logger(logger_name='WellnifyLogger', log_dir='debug_/Users/zaidshaikh/Documents/ml_backend', log_file='recommendation_system.log'):
         # Create the logs directory if it doesn't exist
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)

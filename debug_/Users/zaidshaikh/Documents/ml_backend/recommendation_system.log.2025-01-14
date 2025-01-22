@@ -1,0 +1,474 @@
+2025-01-14 15:40:28,366 - INFO - RecommendationAPI initialized
+2025-01-14 15:40:28,366 - INFO - Started loading and preprocessing data
+2025-01-14 15:40:28,813 - INFO - Starting data preprocessing.
+2025-01-14 15:40:28,818 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:40:28,831 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:40:28,831 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:40:28,831 - INFO - Parsing tag components.
+2025-01-14 15:40:28,833 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:40:28,834 - INFO - Preparing activity features.
+2025-01-14 15:40:28,901 - INFO - Calculating cosine similarities.
+2025-01-14 15:40:28,940 - INFO - Computing TF-IDF for description.
+2025-01-14 15:40:28,985 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:40:28,986 - INFO - Starting the Flask app
+2025-01-14 15:40:29,449 - INFO - RecommendationAPI initialized
+2025-01-14 15:40:29,449 - INFO - RecommendationAPI initialized
+2025-01-14 15:40:29,449 - INFO - Started loading and preprocessing data
+2025-01-14 15:40:29,449 - INFO - Started loading and preprocessing data
+2025-01-14 15:40:29,838 - INFO - Starting data preprocessing.
+2025-01-14 15:40:29,838 - INFO - Starting data preprocessing.
+2025-01-14 15:40:29,840 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:40:29,840 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:40:29,853 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:40:29,853 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:40:29,853 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:40:29,853 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:40:29,853 - INFO - Parsing tag components.
+2025-01-14 15:40:29,853 - INFO - Parsing tag components.
+2025-01-14 15:40:29,855 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:40:29,855 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:40:29,856 - INFO - Preparing activity features.
+2025-01-14 15:40:29,856 - INFO - Preparing activity features.
+2025-01-14 15:40:29,930 - INFO - Calculating cosine similarities.
+2025-01-14 15:40:29,930 - INFO - Calculating cosine similarities.
+2025-01-14 15:40:29,970 - INFO - Computing TF-IDF for description.
+2025-01-14 15:40:29,970 - INFO - Computing TF-IDF for description.
+2025-01-14 15:40:30,016 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:40:30,016 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:40:30,017 - INFO - Starting the Flask app
+2025-01-14 15:40:30,017 - INFO - Starting the Flask app
+2025-01-14 15:51:22,795 - INFO - RecommendationAPI initialized
+2025-01-14 15:51:22,795 - INFO - RecommendationAPI initialized
+2025-01-14 15:51:22,795 - INFO - Started loading and preprocessing data
+2025-01-14 15:51:22,795 - INFO - Started loading and preprocessing data
+2025-01-14 15:51:23,190 - INFO - Starting data preprocessing.
+2025-01-14 15:51:23,190 - INFO - Starting data preprocessing.
+2025-01-14 15:51:23,192 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:51:23,192 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:51:23,205 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:51:23,205 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:51:23,205 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:51:23,205 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:51:23,205 - INFO - Parsing tag components.
+2025-01-14 15:51:23,205 - INFO - Parsing tag components.
+2025-01-14 15:51:23,207 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:51:23,207 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:51:23,208 - INFO - Preparing activity features.
+2025-01-14 15:51:23,208 - INFO - Preparing activity features.
+2025-01-14 15:51:23,274 - INFO - Calculating cosine similarities.
+2025-01-14 15:51:23,274 - INFO - Calculating cosine similarities.
+2025-01-14 15:51:23,315 - INFO - Computing TF-IDF for description.
+2025-01-14 15:51:23,315 - INFO - Computing TF-IDF for description.
+2025-01-14 15:51:23,357 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:51:23,357 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:51:23,357 - INFO - Starting the Flask app
+2025-01-14 15:51:23,357 - INFO - Starting the Flask app
+2025-01-14 15:51:26,492 - INFO - Home page accessed
+2025-01-14 15:51:26,492 - INFO - Home page accessed
+2025-01-14 15:51:54,420 - INFO - Fetching recommendations for user_id: 1606
+2025-01-14 15:51:54,420 - INFO - Fetching recommendations for user_id: 1606
+2025-01-14 15:51:54,420 - INFO - Generating recommendations for user 1606.
+2025-01-14 15:51:54,420 - INFO - Generating recommendations for user 1606.
+2025-01-14 15:51:54,423 - DEBUG - User 1606 is part of organizations: [  1 352].
+2025-01-14 15:51:54,423 - DEBUG - User 1606 is part of organizations: [  1 352].
+2025-01-14 15:51:54,456 - INFO - Recommendations successfully generated for user_id: 1606
+2025-01-14 15:51:54,456 - INFO - Recommendations successfully generated for user_id: 1606
+2025-01-14 15:51:54,458 - INFO - Recommendations successfully returned for user_id: 1606
+2025-01-14 15:51:54,458 - INFO - Recommendations successfully returned for user_id: 1606
+2025-01-14 15:52:23,746 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'generate_recommendations_for_all'
+2025-01-14 15:52:23,746 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'generate_recommendations_for_all'
+2025-01-14 15:54:03,510 - INFO - RecommendationAPI initialized
+2025-01-14 15:54:03,510 - INFO - RecommendationAPI initialized
+2025-01-14 15:54:03,510 - INFO - Started loading and preprocessing data
+2025-01-14 15:54:03,510 - INFO - Started loading and preprocessing data
+2025-01-14 15:54:03,900 - INFO - Starting data preprocessing.
+2025-01-14 15:54:03,900 - INFO - Starting data preprocessing.
+2025-01-14 15:54:03,902 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:54:03,902 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 15:54:03,914 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:54:03,914 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 15:54:03,914 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:54:03,914 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 15:54:03,914 - INFO - Parsing tag components.
+2025-01-14 15:54:03,914 - INFO - Parsing tag components.
+2025-01-14 15:54:03,916 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:54:03,916 - INFO - Binarizing tag types and specific values.
+2025-01-14 15:54:03,917 - INFO - Preparing activity features.
+2025-01-14 15:54:03,917 - INFO - Preparing activity features.
+2025-01-14 15:54:03,979 - INFO - Calculating cosine similarities.
+2025-01-14 15:54:03,979 - INFO - Calculating cosine similarities.
+2025-01-14 15:54:04,021 - INFO - Computing TF-IDF for description.
+2025-01-14 15:54:04,021 - INFO - Computing TF-IDF for description.
+2025-01-14 15:54:04,063 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:54:04,063 - INFO - Data successfully loaded and preprocessed
+2025-01-14 15:54:04,064 - INFO - Starting the Flask app
+2025-01-14 15:54:04,064 - INFO - Starting the Flask app
+2025-01-14 15:54:07,518 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 15:54:07,518 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 15:54:07,519 - INFO - Recommendations successfully generated for users.
+2025-01-14 15:54:07,519 - INFO - Recommendations successfully generated for users.
+2025-01-14 16:00:49,712 - INFO - RecommendationAPI initialized
+2025-01-14 16:00:49,712 - INFO - RecommendationAPI initialized
+2025-01-14 16:00:49,712 - INFO - Started loading and preprocessing data
+2025-01-14 16:00:49,712 - INFO - Started loading and preprocessing data
+2025-01-14 16:00:50,106 - INFO - Starting data preprocessing.
+2025-01-14 16:00:50,106 - INFO - Starting data preprocessing.
+2025-01-14 16:00:50,108 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:00:50,108 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:00:50,121 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:00:50,121 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:00:50,121 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:00:50,121 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:00:50,121 - INFO - Parsing tag components.
+2025-01-14 16:00:50,121 - INFO - Parsing tag components.
+2025-01-14 16:00:50,123 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:00:50,123 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:00:50,124 - INFO - Preparing activity features.
+2025-01-14 16:00:50,124 - INFO - Preparing activity features.
+2025-01-14 16:00:50,187 - INFO - Calculating cosine similarities.
+2025-01-14 16:00:50,187 - INFO - Calculating cosine similarities.
+2025-01-14 16:00:50,230 - INFO - Computing TF-IDF for description.
+2025-01-14 16:00:50,230 - INFO - Computing TF-IDF for description.
+2025-01-14 16:00:50,272 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:00:50,272 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:00:50,273 - INFO - Starting the Flask app
+2025-01-14 16:00:50,273 - INFO - Starting the Flask app
+2025-01-14 16:01:25,441 - INFO - RecommendationAPI initialized
+2025-01-14 16:01:25,441 - INFO - RecommendationAPI initialized
+2025-01-14 16:01:25,441 - INFO - Started loading and preprocessing data
+2025-01-14 16:01:25,441 - INFO - Started loading and preprocessing data
+2025-01-14 16:01:25,829 - INFO - Starting data preprocessing.
+2025-01-14 16:01:25,829 - INFO - Starting data preprocessing.
+2025-01-14 16:01:25,831 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:01:25,831 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:01:25,843 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:01:25,843 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:01:25,843 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:01:25,843 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:01:25,843 - INFO - Parsing tag components.
+2025-01-14 16:01:25,843 - INFO - Parsing tag components.
+2025-01-14 16:01:25,845 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:01:25,845 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:01:25,846 - INFO - Preparing activity features.
+2025-01-14 16:01:25,846 - INFO - Preparing activity features.
+2025-01-14 16:01:25,907 - INFO - Calculating cosine similarities.
+2025-01-14 16:01:25,907 - INFO - Calculating cosine similarities.
+2025-01-14 16:01:25,946 - INFO - Computing TF-IDF for description.
+2025-01-14 16:01:25,946 - INFO - Computing TF-IDF for description.
+2025-01-14 16:01:25,988 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:01:25,988 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:01:37,735 - INFO - RecommendationAPI initialized
+2025-01-14 16:01:37,735 - INFO - RecommendationAPI initialized
+2025-01-14 16:01:37,735 - INFO - Started loading and preprocessing data
+2025-01-14 16:01:37,735 - INFO - Started loading and preprocessing data
+2025-01-14 16:01:38,121 - INFO - Starting data preprocessing.
+2025-01-14 16:01:38,121 - INFO - Starting data preprocessing.
+2025-01-14 16:01:38,123 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:01:38,123 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:01:38,135 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:01:38,135 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:01:38,135 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:01:38,135 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:01:38,135 - INFO - Parsing tag components.
+2025-01-14 16:01:38,135 - INFO - Parsing tag components.
+2025-01-14 16:01:38,137 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:01:38,137 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:01:38,138 - INFO - Preparing activity features.
+2025-01-14 16:01:38,138 - INFO - Preparing activity features.
+2025-01-14 16:01:38,199 - INFO - Calculating cosine similarities.
+2025-01-14 16:01:38,199 - INFO - Calculating cosine similarities.
+2025-01-14 16:01:38,238 - INFO - Computing TF-IDF for description.
+2025-01-14 16:01:38,238 - INFO - Computing TF-IDF for description.
+2025-01-14 16:01:38,282 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:01:38,282 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:01:38,282 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:01:38,282 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:01:38,282 - INFO - Starting the Flask app
+2025-01-14 16:01:38,282 - INFO - Starting the Flask app
+2025-01-14 16:01:38,739 - INFO - RecommendationAPI initialized
+2025-01-14 16:01:38,739 - INFO - RecommendationAPI initialized
+2025-01-14 16:01:38,739 - INFO - Started loading and preprocessing data
+2025-01-14 16:01:38,739 - INFO - Started loading and preprocessing data
+2025-01-14 16:01:39,132 - INFO - Starting data preprocessing.
+2025-01-14 16:01:39,132 - INFO - Starting data preprocessing.
+2025-01-14 16:01:39,134 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:01:39,134 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:01:39,146 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:01:39,146 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:01:39,146 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:01:39,146 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:01:39,147 - INFO - Parsing tag components.
+2025-01-14 16:01:39,147 - INFO - Parsing tag components.
+2025-01-14 16:01:39,148 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:01:39,148 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:01:39,149 - INFO - Preparing activity features.
+2025-01-14 16:01:39,149 - INFO - Preparing activity features.
+2025-01-14 16:01:39,213 - INFO - Calculating cosine similarities.
+2025-01-14 16:01:39,213 - INFO - Calculating cosine similarities.
+2025-01-14 16:01:39,251 - INFO - Computing TF-IDF for description.
+2025-01-14 16:01:39,251 - INFO - Computing TF-IDF for description.
+2025-01-14 16:01:39,292 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:01:39,292 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:01:39,292 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:01:39,292 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:01:39,292 - INFO - Starting the Flask app
+2025-01-14 16:01:39,292 - INFO - Starting the Flask app
+2025-01-14 16:35:13,046 - INFO - RecommendationAPI initialized
+2025-01-14 16:35:13,046 - INFO - RecommendationAPI initialized
+2025-01-14 16:35:13,046 - INFO - Started loading and preprocessing data
+2025-01-14 16:35:13,046 - INFO - Started loading and preprocessing data
+2025-01-14 16:35:13,481 - INFO - Starting data preprocessing.
+2025-01-14 16:35:13,481 - INFO - Starting data preprocessing.
+2025-01-14 16:35:13,485 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:35:13,485 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:35:13,498 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:35:13,498 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:35:13,498 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:35:13,498 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:35:13,499 - INFO - Parsing tag components.
+2025-01-14 16:35:13,499 - INFO - Parsing tag components.
+2025-01-14 16:35:13,500 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:35:13,500 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:35:13,501 - INFO - Preparing activity features.
+2025-01-14 16:35:13,501 - INFO - Preparing activity features.
+2025-01-14 16:35:13,564 - INFO - Calculating cosine similarities.
+2025-01-14 16:35:13,564 - INFO - Calculating cosine similarities.
+2025-01-14 16:35:13,603 - INFO - Computing TF-IDF for description.
+2025-01-14 16:35:13,603 - INFO - Computing TF-IDF for description.
+2025-01-14 16:35:13,646 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:35:13,646 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:35:13,646 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:35:13,646 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:35:13,647 - INFO - Starting the Flask app
+2025-01-14 16:35:13,647 - INFO - Starting the Flask app
+2025-01-14 16:35:14,113 - INFO - RecommendationAPI initialized
+2025-01-14 16:35:14,113 - INFO - RecommendationAPI initialized
+2025-01-14 16:35:14,113 - INFO - Started loading and preprocessing data
+2025-01-14 16:35:14,113 - INFO - Started loading and preprocessing data
+2025-01-14 16:35:14,499 - INFO - Starting data preprocessing.
+2025-01-14 16:35:14,499 - INFO - Starting data preprocessing.
+2025-01-14 16:35:14,501 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:35:14,501 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:35:14,512 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:35:14,512 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:35:14,512 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:35:14,512 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:35:14,513 - INFO - Parsing tag components.
+2025-01-14 16:35:14,513 - INFO - Parsing tag components.
+2025-01-14 16:35:14,514 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:35:14,514 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:35:14,516 - INFO - Preparing activity features.
+2025-01-14 16:35:14,516 - INFO - Preparing activity features.
+2025-01-14 16:35:14,581 - INFO - Calculating cosine similarities.
+2025-01-14 16:35:14,581 - INFO - Calculating cosine similarities.
+2025-01-14 16:35:14,620 - INFO - Computing TF-IDF for description.
+2025-01-14 16:35:14,620 - INFO - Computing TF-IDF for description.
+2025-01-14 16:35:14,663 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:35:14,663 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:35:14,664 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:35:14,664 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:35:14,664 - INFO - Starting the Flask app
+2025-01-14 16:35:14,664 - INFO - Starting the Flask app
+2025-01-14 16:36:48,294 - INFO - RecommendationAPI initialized
+2025-01-14 16:36:48,294 - INFO - RecommendationAPI initialized
+2025-01-14 16:36:48,294 - INFO - Started loading and preprocessing data
+2025-01-14 16:36:48,294 - INFO - Started loading and preprocessing data
+2025-01-14 16:36:48,684 - INFO - Starting data preprocessing.
+2025-01-14 16:36:48,684 - INFO - Starting data preprocessing.
+2025-01-14 16:36:48,686 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:36:48,686 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:36:48,698 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:36:48,698 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:36:48,699 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:36:48,699 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:36:48,699 - INFO - Parsing tag components.
+2025-01-14 16:36:48,699 - INFO - Parsing tag components.
+2025-01-14 16:36:48,700 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:36:48,700 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:36:48,702 - INFO - Preparing activity features.
+2025-01-14 16:36:48,702 - INFO - Preparing activity features.
+2025-01-14 16:36:48,767 - INFO - Calculating cosine similarities.
+2025-01-14 16:36:48,767 - INFO - Calculating cosine similarities.
+2025-01-14 16:36:48,807 - INFO - Computing TF-IDF for description.
+2025-01-14 16:36:48,807 - INFO - Computing TF-IDF for description.
+2025-01-14 16:36:48,849 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:36:48,849 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:36:48,849 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:36:48,849 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:36:48,850 - INFO - Starting the Flask app
+2025-01-14 16:36:48,850 - INFO - Starting the Flask app
+2025-01-14 16:37:17,930 - INFO - RecommendationAPI initialized
+2025-01-14 16:37:17,930 - INFO - RecommendationAPI initialized
+2025-01-14 16:37:17,930 - INFO - Started loading and preprocessing data
+2025-01-14 16:37:17,930 - INFO - Started loading and preprocessing data
+2025-01-14 16:37:18,334 - INFO - Starting data preprocessing.
+2025-01-14 16:37:18,334 - INFO - Starting data preprocessing.
+2025-01-14 16:37:18,336 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:37:18,336 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:37:18,348 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:37:18,348 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:37:18,348 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:37:18,348 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:37:18,348 - INFO - Parsing tag components.
+2025-01-14 16:37:18,348 - INFO - Parsing tag components.
+2025-01-14 16:37:18,350 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:37:18,350 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:37:18,351 - INFO - Preparing activity features.
+2025-01-14 16:37:18,351 - INFO - Preparing activity features.
+2025-01-14 16:37:18,412 - INFO - Calculating cosine similarities.
+2025-01-14 16:37:18,412 - INFO - Calculating cosine similarities.
+2025-01-14 16:37:18,451 - INFO - Computing TF-IDF for description.
+2025-01-14 16:37:18,451 - INFO - Computing TF-IDF for description.
+2025-01-14 16:37:18,493 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:37:18,493 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:37:18,493 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:37:18,493 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'user'
+2025-01-14 16:37:18,493 - INFO - Starting the Flask app
+2025-01-14 16:37:18,493 - INFO - Starting the Flask app
+2025-01-14 16:38:11,630 - INFO - RecommendationAPI initialized
+2025-01-14 16:38:11,630 - INFO - RecommendationAPI initialized
+2025-01-14 16:38:11,630 - INFO - Started loading and preprocessing data
+2025-01-14 16:38:11,630 - INFO - Started loading and preprocessing data
+2025-01-14 16:38:12,025 - INFO - Starting data preprocessing.
+2025-01-14 16:38:12,025 - INFO - Starting data preprocessing.
+2025-01-14 16:38:12,027 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:38:12,027 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:38:12,041 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:38:12,041 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:38:12,041 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:38:12,041 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:38:12,041 - INFO - Parsing tag components.
+2025-01-14 16:38:12,041 - INFO - Parsing tag components.
+2025-01-14 16:38:12,043 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:38:12,043 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:38:12,044 - INFO - Preparing activity features.
+2025-01-14 16:38:12,044 - INFO - Preparing activity features.
+2025-01-14 16:38:12,107 - INFO - Calculating cosine similarities.
+2025-01-14 16:38:12,107 - INFO - Calculating cosine similarities.
+2025-01-14 16:38:12,147 - INFO - Computing TF-IDF for description.
+2025-01-14 16:38:12,147 - INFO - Computing TF-IDF for description.
+2025-01-14 16:38:12,192 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:38:12,192 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:38:12,192 - ERROR - Error during recommendation generation: 'NoneType' object is not subscriptable
+2025-01-14 16:38:12,192 - ERROR - Error during recommendation generation: 'NoneType' object is not subscriptable
+2025-01-14 16:38:12,193 - INFO - Starting the Flask app
+2025-01-14 16:38:12,193 - INFO - Starting the Flask app
+2025-01-14 16:38:38,169 - INFO - RecommendationAPI initialized
+2025-01-14 16:38:38,169 - INFO - RecommendationAPI initialized
+2025-01-14 16:38:38,169 - INFO - Started loading and preprocessing data
+2025-01-14 16:38:38,169 - INFO - Started loading and preprocessing data
+2025-01-14 16:38:38,558 - INFO - Starting data preprocessing.
+2025-01-14 16:38:38,558 - INFO - Starting data preprocessing.
+2025-01-14 16:38:38,560 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:38:38,560 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:38:38,572 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:38:38,572 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:38:38,572 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:38:38,572 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:38:38,573 - INFO - Parsing tag components.
+2025-01-14 16:38:38,573 - INFO - Parsing tag components.
+2025-01-14 16:38:38,574 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:38:38,574 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:38:38,575 - INFO - Preparing activity features.
+2025-01-14 16:38:38,575 - INFO - Preparing activity features.
+2025-01-14 16:38:38,639 - INFO - Calculating cosine similarities.
+2025-01-14 16:38:38,639 - INFO - Calculating cosine similarities.
+2025-01-14 16:38:38,678 - INFO - Computing TF-IDF for description.
+2025-01-14 16:38:38,678 - INFO - Computing TF-IDF for description.
+2025-01-14 16:38:38,720 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:38:38,720 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:38:38,721 - INFO - Starting the Flask app
+2025-01-14 16:38:38,721 - INFO - Starting the Flask app
+2025-01-14 16:38:46,032 - INFO - Home page accessed
+2025-01-14 16:38:46,032 - INFO - Home page accessed
+2025-01-14 16:38:56,941 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'generate_recommendations_for_all'
+2025-01-14 16:38:56,941 - ERROR - Error during recommendation generation: 'RecommendationAPI' object has no attribute 'generate_recommendations_for_all'
+2025-01-14 16:41:25,125 - INFO - RecommendationAPI initialized
+2025-01-14 16:41:25,125 - INFO - RecommendationAPI initialized
+2025-01-14 16:41:25,125 - INFO - Started loading and preprocessing data
+2025-01-14 16:41:25,125 - INFO - Started loading and preprocessing data
+2025-01-14 16:41:25,530 - INFO - Starting data preprocessing.
+2025-01-14 16:41:25,530 - INFO - Starting data preprocessing.
+2025-01-14 16:41:25,533 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:41:25,533 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 16:41:25,545 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:41:25,545 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 16:41:25,545 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:41:25,545 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 16:41:25,546 - INFO - Parsing tag components.
+2025-01-14 16:41:25,546 - INFO - Parsing tag components.
+2025-01-14 16:41:25,547 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:41:25,547 - INFO - Binarizing tag types and specific values.
+2025-01-14 16:41:25,548 - INFO - Preparing activity features.
+2025-01-14 16:41:25,548 - INFO - Preparing activity features.
+2025-01-14 16:41:25,612 - INFO - Calculating cosine similarities.
+2025-01-14 16:41:25,612 - INFO - Calculating cosine similarities.
+2025-01-14 16:41:25,653 - INFO - Computing TF-IDF for description.
+2025-01-14 16:41:25,653 - INFO - Computing TF-IDF for description.
+2025-01-14 16:41:25,695 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:41:25,695 - INFO - Data successfully loaded and preprocessed
+2025-01-14 16:41:25,696 - INFO - Starting the Flask app
+2025-01-14 16:41:25,696 - INFO - Starting the Flask app
+2025-01-14 16:41:43,606 - ERROR - Error during recommendation generation: 'NoneType' object is not subscriptable
+2025-01-14 16:41:43,606 - ERROR - Error during recommendation generation: 'NoneType' object is not subscriptable
+2025-01-14 16:41:43,607 - INFO - Recommendations successfully generated for users.
+2025-01-14 16:41:43,607 - INFO - Recommendations successfully generated for users.
+2025-01-14 16:45:59,078 - INFO - RecommendationAPI initialized
+2025-01-14 16:45:59,078 - INFO - RecommendationAPI initialized
+2025-01-14 16:45:59,078 - INFO - Started loading and preprocessing data
+2025-01-14 16:45:59,078 - INFO - Started loading and preprocessing data
+2025-01-14 16:45:59,449 - ERROR - Error during data loading and preprocessing: not enough values to unpack (expected 7, got 6)
+2025-01-14 16:45:59,449 - ERROR - Error during data loading and preprocessing: not enough values to unpack (expected 7, got 6)
+2025-01-14 17:07:29,173 - INFO - RecommendationAPI initialized
+2025-01-14 17:07:29,173 - INFO - RecommendationAPI initialized
+2025-01-14 17:07:29,173 - INFO - Started loading and preprocessing data
+2025-01-14 17:07:29,173 - INFO - Started loading and preprocessing data
+2025-01-14 17:07:29,565 - INFO - Starting data preprocessing.
+2025-01-14 17:07:29,565 - INFO - Starting data preprocessing.
+2025-01-14 17:07:29,570 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 17:07:29,570 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 17:07:29,583 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 17:07:29,583 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 17:07:29,583 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 17:07:29,583 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 17:07:29,583 - INFO - Parsing tag components.
+2025-01-14 17:07:29,583 - INFO - Parsing tag components.
+2025-01-14 17:07:29,585 - INFO - Binarizing tag types and specific values.
+2025-01-14 17:07:29,585 - INFO - Binarizing tag types and specific values.
+2025-01-14 17:07:29,586 - INFO - Preparing activity features.
+2025-01-14 17:07:29,586 - INFO - Preparing activity features.
+2025-01-14 17:07:29,649 - INFO - Calculating cosine similarities.
+2025-01-14 17:07:29,649 - INFO - Calculating cosine similarities.
+2025-01-14 17:07:29,688 - INFO - Computing TF-IDF for description.
+2025-01-14 17:07:29,688 - INFO - Computing TF-IDF for description.
+2025-01-14 17:07:29,731 - INFO - Data successfully loaded and preprocessed
+2025-01-14 17:07:29,731 - INFO - Data successfully loaded and preprocessed
+2025-01-14 17:07:29,732 - INFO - Starting the Flask app
+2025-01-14 17:07:29,732 - INFO - Starting the Flask app
+2025-01-14 17:07:30,196 - INFO - RecommendationAPI initialized
+2025-01-14 17:07:30,196 - INFO - RecommendationAPI initialized
+2025-01-14 17:07:30,196 - INFO - Started loading and preprocessing data
+2025-01-14 17:07:30,196 - INFO - Started loading and preprocessing data
+2025-01-14 17:07:30,555 - INFO - Starting data preprocessing.
+2025-01-14 17:07:30,555 - INFO - Starting data preprocessing.
+2025-01-14 17:07:30,557 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 17:07:30,557 - INFO - Final merged DataFrame shape: (2791, 26)
+2025-01-14 17:07:30,569 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 17:07:30,569 - INFO - Processed collection DataFrame shape: (2566, 6)
+2025-01-14 17:07:30,569 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 17:07:30,569 - INFO - Splitting 'tag_category' into tag_list.
+2025-01-14 17:07:30,570 - INFO - Parsing tag components.
+2025-01-14 17:07:30,570 - INFO - Parsing tag components.
+2025-01-14 17:07:30,572 - INFO - Binarizing tag types and specific values.
+2025-01-14 17:07:30,572 - INFO - Binarizing tag types and specific values.
+2025-01-14 17:07:30,573 - INFO - Preparing activity features.
+2025-01-14 17:07:30,573 - INFO - Preparing activity features.
+2025-01-14 17:07:30,644 - INFO - Calculating cosine similarities.
+2025-01-14 17:07:30,644 - INFO - Calculating cosine similarities.
+2025-01-14 17:07:30,683 - INFO - Computing TF-IDF for description.
+2025-01-14 17:07:30,683 - INFO - Computing TF-IDF for description.
+2025-01-14 17:07:30,730 - INFO - Data successfully loaded and preprocessed
+2025-01-14 17:07:30,730 - INFO - Data successfully loaded and preprocessed
+2025-01-14 17:07:30,731 - INFO - Starting the Flask app
+2025-01-14 17:07:30,731 - INFO - Starting the Flask app
+2025-01-15 13:08:15,476 - INFO - Home page accessed
