@@ -1,5 +1,9 @@
-# This class contains all the configuration settings to connect to DB / localhost server
-# config.py
+"""
+#Class: config.py
+#Description: Used to maintain all the confifurations. 
+#Note: Make sure to use the .env for storing the credentials securely.
+Owner: Wellnify
+"""
 import os
 from dotenv import load_dotenv
 

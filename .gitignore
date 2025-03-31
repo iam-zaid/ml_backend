@@ -7,5 +7,8 @@ collection_to_tag.csv
 collection.csv
 user_to_org.csv
 
+*.logs
+
 #--#
 __pycache__
+debug_logs
